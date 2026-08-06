@@ -1,10 +1,1 @@
-on:
-  push:
-    branches: [main]
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Publish docs
-        run: echo "Publishing documentation..."
+b246CiAgcHVzaDoKICAgIGJyYW5jaGVzOiBbbWFpbl0Kam9iczoKICBwdWJsaXNoOgogICAgcnVucy1vbjogdWJ1bnR1LWxhdGVzdAogICAgc3RlcHM6CiAgICAgIC0gdXNlczogYWN0aW9ucy9jaGVja291dEB2NAogICAgICAtIG5hbWU6IFB1Ymxpc2ggZG9jcwogICAgICAgIHJ1bjogZWNobyAiUHVibGlzaGluZyBkb2N1bWVudGF0aW9uLi4uIgo=
