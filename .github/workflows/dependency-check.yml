@@ -1,0 +1,15 @@
+name: Dependency Check
+on:
+  schedule:
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      - name: Audit dependencies
+        run: npm audit
